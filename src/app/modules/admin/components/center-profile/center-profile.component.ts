@@ -33,11 +33,12 @@ export class CenterProfileComponent implements OnInit {
  }
    deleteCenter(id: number) {
     this.centerService.deleteCenter(id).subscribe(data => {
+      alert("Successfully user is deleted")
        console.log(data);
       this.getCenters();
-     })
+     },error=>alert("Sorry user not loggedin"));
   }
-
+  
 
 
 }

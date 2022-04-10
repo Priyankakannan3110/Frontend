@@ -5,32 +5,28 @@
       <tr>
         <th>ID</th>
         <th>Admin or User</th>
-        <th>Email-id</th>
         <th>User Name</th>
+        <th>Email-id</th>
         <th>Phone Number</th>
         <!-- <th>Password</th>
         <th>Confrim Password</th> -->
-        <th>Actions</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let user of users">
         <td>{{ user.id }}</td>
         <td>{{ user.adminoruser }}</td>
-        <td>{{ user.email }}</td>
         <td>{{ user.username }}</td>
+        <td>{{ user.email }}</td>
         <td>{{ user.mobileNumber }}</td>
         <!-- <td>{{ user.password }}</td>
         <td>{{ user.confirmPassword }}</td> -->
         <td>
-          <button (click)="updateUser(user.id)" class="btn btn-info">
+          <!-- <button (click)="updateUser(user.id)" class="btn btn-info">
             Update
-          </button>
-          <button
-            (click)="deleteUser(user.id)"
-            class="btn btn-danger"
-            style="margin: left 10px;"
-          >
+          </button> -->
+          <button (click)="deleteUser(user.id)" class="btn btn-danger">
             Delete
           </button>
         </td>

@@ -11,6 +11,7 @@ import { UserListComponent } from './components/user-list/user-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { EditUserComponent } from './components/edit-user/edit-user.component';
+import { UpdateCenterComponent } from './components/update-center/update-center.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { EditUserComponent } from './components/edit-user/edit-user.component';
     AddCenterComponent,
     CenterProfileComponent,
     UserListComponent,
-    EditUserComponent
+    EditUserComponent,
+    UpdateCenterComponent
   ],
   imports: [
     CommonModule,
