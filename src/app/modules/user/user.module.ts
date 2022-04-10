@@ -7,20 +7,26 @@ import { UserHeaderComponent } from './components/user-header/user-header.compon
 import { UserHomepageComponent } from './components/user-homepage/user-homepage.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddAppointmentComponent } from './components/add-appointment/add-appointment.component';
+import { MyBookingsComponent } from './components/my-bookings/my-bookings.component';
 
 
 @NgModule({
   declarations: [
     UserDashboardComponent,
     UserHeaderComponent,
-    UserHomepageComponent
+    UserHomepageComponent,
+    AddAppointmentComponent,
+    MyBookingsComponent
   ],
   imports: [
     CommonModule,
     UserRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
+
   ]
 })
 export class UserModule { }
